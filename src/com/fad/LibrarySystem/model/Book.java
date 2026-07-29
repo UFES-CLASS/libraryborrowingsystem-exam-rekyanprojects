@@ -115,7 +115,7 @@ public class Book extends LibraryItem {
 
     public String getBookId() { return itemId; }
     public String getAuthor() { return author; }
-    public String getGenre() {return genre;}
+    public String getGenre()  { return genre; }
 
     public void setBookId(String bookId) { this.itemId = bookId; }
     public void setAuthor(String author) { this.author = author; }

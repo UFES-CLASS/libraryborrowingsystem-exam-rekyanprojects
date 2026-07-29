@@ -61,7 +61,7 @@ public class LibraryController {
                 case 1  -> menuView.showMessage("Books — use the JavaFX GUI (run App.java).");
                 case 2  -> menuView.showMessage("Members — use the JavaFX GUI (run App.java).");
                 case 3  -> borrowController.handleMenu();
-                case 4  -> borrowController.handleMenu();
+                case 4  -> menuView.showMessage("Reservation");
                 case 5  -> menuView.showMessage("Fines — coming soon.");
                 case 0  -> menuView.showMessage("Goodbye!");
                 default -> menuView.showError("Invalid option. Try again.");

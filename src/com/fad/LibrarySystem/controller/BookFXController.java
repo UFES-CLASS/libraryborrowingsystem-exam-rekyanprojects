@@ -190,7 +190,7 @@ public class BookFXController {
             String author = tfAuthor.getText().trim();
             String genre  = tfGenre.getText().trim();
             if (id.isEmpty() || title.isEmpty() || author.isEmpty()) return null;
-            return service.addBook(id, title, genre.isEmpty() ? "General" : genre, author);
+            return service.addBook(id, title, author, genre.isEmpty() ? "General" : genre);
         });
 
         // showAndWait blocks until the dialog is closed, then runs the lambda

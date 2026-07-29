@@ -51,7 +51,8 @@ public class Multimedia extends LibraryItem {
         return initial;
     }
 
-    public String getinfo() {
+    @Override
+    public String getInfo() {
         String status = available ? "Available" : "Borrowed";
         return "[" + itemId + "] \"" + title + "\""
                 + " | Type: " + type
