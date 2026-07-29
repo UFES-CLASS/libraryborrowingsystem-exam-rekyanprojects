@@ -29,7 +29,7 @@ package com.fad.LibrarySystem.model;
  */
 public class Book extends LibraryItem {
 
-    public String author;
+    private String author;
     private String genre;
 
     public Book(String bookId, String title, String author, String genre) {
@@ -115,6 +115,7 @@ public class Book extends LibraryItem {
 
     public String getBookId() { return itemId; }
     public String getAuthor() { return author; }
+    public String getGenre() {return genre;}
 
     public void setBookId(String bookId) { this.itemId = bookId; }
     public void setAuthor(String author) { this.author = author; }
